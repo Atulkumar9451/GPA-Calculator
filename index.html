@@ -214,13 +214,15 @@ button:hover {
 <script>
 
 const gradePoints = {
-  "A+": 10,
-  "A": 9,
-  "B+": 8,
-  "B": 7,
-  "C": 6,
-  "D": 5,
-  "F": 0
+  "O": 10,
+  "A+": 9,
+  "A": 8,
+  "B+": 7,
+  "B": 6,
+  "C": 5,
+  "P": 4,
+  "F":0,
+  "AB":0;
 };
 
 function addRow() {
@@ -241,13 +243,15 @@ function addRow() {
     <td>
       <select class="grade">
         <option value="">Select</option>
+        <option value="O">O</option>
         <option value="A+">A+</option>
         <option value="A">A</option>
         <option value="B+">B+</option>
         <option value="B">B</option>
         <option value="C">C</option>
-        <option value="D">D</option>
+        <option value="p">D</option>
         <option value="F">F</option>
+        <option value="AB">ABSENT</option>
       </select>
     </td>
 
